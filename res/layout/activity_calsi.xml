@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Calsi">
+
+    <EditText
+        android:id="@+id/firstnum"
+        android:inputType="number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="60dp"
+        android:hint="Enter first num"
+        android:padding="15dp"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/secondnum"
+        android:inputType="number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/firstnum"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="15dp"
+        android:hint="Enter first num"
+        android:padding="15dp"
+        android:textSize="18sp"
+
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstnum"
+        android:layout_marginTop="50dp"
+        android:id="@+id/llout"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="6dp"
+            android:text="+"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/sub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="6dp"
+            android:text="-"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/mul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="6dp"
+            android:text="*"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/div"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="6dp"
+            android:text="/"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/llout"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="27sp"
+        android:id="@+id/answer"/>
+
+</RelativeLayout>
